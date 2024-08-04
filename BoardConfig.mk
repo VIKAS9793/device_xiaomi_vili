@@ -15,6 +15,11 @@ include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := vili
 
+# Build Hacks
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+RELAX_USES_LIBRARY_CHECK=true
+
 # Camera
 TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
 
