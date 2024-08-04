@@ -11,14 +11,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from vili device
 $(call inherit-product, device/xiaomi/vili/device.mk)
 
-# Inherit some common aosp stuff.
+# Inherit some common ProjectEverest stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+
+# Everest
+WITH_GAPPS := true
+EVEREST_BUILD_TYPE := UNOFFICIAL
+EVEREST_MAINTAINER := VIKAS
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 2107113SG
-PRODUCT_NAME := lineage_vili
+PRODUCT_NAME := everest_vili
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
